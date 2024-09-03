@@ -3,8 +3,8 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-    background-color: #f8f7f7;
+body {
+  background-color: #f8f7f7;
 }
 .container {
   display: flex;
@@ -42,129 +42,132 @@ body{
   font-size: 46px;
 }
 
-.bigger-container{
-    padding: 22px;
+.bigger-container {
+  padding: 22px;
 }
-.number{
-    color: #7466F0;
-    /* opacity: 70%; */
-    padding-top: 20px;
-}
-
-.result h2{
-    color: #FDFFFF;
-    padding: 25px 0;
+.number {
+  color: #7466f0;
+  /* opacity: 70%; */
+  padding-top: 20px;
 }
 
-.result p:nth-of-type(2){
-    color: #B4B4FF;
-    width: 200px;
-    margin: auto;
-    color: #C0BEFF;
+.result h2 {
+  color: #fdffff;
+  padding: 25px 0;
 }
 
-.result-summery{
+.result p:nth-of-type(2) {
+  color: #b4b4ff;
+  width: 200px;
+  margin: auto;
+  color: #c0beff;
+}
+
+.result-summery {
+  padding: 20px;
+  border: none;
+  width: 55%;
+  height: 58%;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+}
+
+.result-summery h1 {
+  color: #393e53;
+  padding-bottom: 30px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items:nth-of-type(1) {
+  background-color: #fff6f5;
+}
+.items:nth-of-type(2) {
+  background-color: #fffbf2;
+}
+.items:nth-of-type(3) {
+  background-color: #f2fbfa;
+}
+.items:nth-of-type(4) {
+  background-color: #f3f3fd;
+}
+
+.item img {
+  padding-right: 7px;
+}
+
+#conti {
+  background-color: #303b59;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  right: 20%;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+#conti:active,
+#conti:hover {
+  background-color: #4535f0;
+}
+
+@media (max-width: 576px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  .result {
+    /* height: 80%; */
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .bigger-container {
+    padding-top: 30px;
+  }
+
+  .number {
+    color: #8377ec;
+  }
+
+  .result-summery {
     padding: 20px;
     border: none;
-    width: 55%;
+    width: 90%;
     height: 58%;
-    background-color: #fff;
-    border-radius: 0 10px 10px 0;
-    position: relative;
-}
-
-.result-summery h1{
-    color: #393E53;
-    padding-bottom: 30px;
-}
-
-.items{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.item{
-    display: flex;
-    justify-content: space-between;
-}
-
-.items:nth-of-type(1){
-    background-color: #FFF6F5;
-}
-.items:nth-of-type(2){
-    background-color: #FFFBF2;
-}
-.items:nth-of-type(3){
-    background-color: #F2FBFA;
-}
-.items:nth-of-type(4){
-    background-color: #F3F3FD;
-}
-
-.item img{
-    padding-right: 7px;
-}
-
-#conti{
-    background-color: #303B59;
-    color: #fff;
-    padding: 10px 50px;
-    border-radius: 12px;
-    border: none;
-    font-size: 16px;
-    position: absolute;
-    right: 20%;
-    bottom: 30px;
-    cursor: pointer;
-}
-
-#conti:active, #conti:hover{
-    background-color: #4535F0;
-}
-
-@media (max-width: 576px){
-    .container{
-        display: block;
-        width: 100%;
-    }
-    .result{
-        height: 80%;
-        width: 100%;
-        border-radius: 0 0 20px 20px ;
-    }
-
-    .bigger-container{
-        padding-top: 30px;
-    }
-
-    .number{
-        color: #8377ec;
-    }
-
-    .result-summery{
-        padding: 20px;
-        border: none;
-        width: 90%;
-        height: 58%;
-        border-radius: none;
-        /* background-color: #fff;
+    border-radius: none;
+    /* background-color: #fff;
         border-radius: 0 10px 10px 0;
         position: relative; */
-        padding-bottom: 60px;
-    }
+    /* padding-bottom: 60px; */
+  }
 
-    #conti{
-       /* text-align: center; */
-       /* position: static; */
+  #conti {
+    /* text-align: center; */
+    /* position: static; */
 
-       left: 50%;
-       bottom: 10px;
-       transform: translateX(-50%);
-       padding: 12px 30px;
-            
-    }
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    padding: 12px 30px;
+  }
+  #conti:hover {
+    background-color: #4535f0;
+  }
 }
